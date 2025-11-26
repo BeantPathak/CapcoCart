@@ -18,9 +18,6 @@ public class Cart {
         this.client = client;
         this.pricingStrategy = pricingStrategy;
         this.products = new EnumMap<>(ProductType.class);
-        for (ProductType type : ProductType.values()) {
-            products.put(type, 0); // initialize quantities to 0
-        }
     }
 
     public void addProduct(ProductType type, int quantity) {
